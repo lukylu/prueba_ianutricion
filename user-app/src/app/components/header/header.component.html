@@ -1,0 +1,14 @@
+<header>
+  <a href="#" class="logo">
+    <div class="logo-mark"></div>
+    <span class="logo-text">Nutri<span>Mind</span></span>
+  </a>
+
+  <nav>
+    @for (link of navLinks; track link.href) {
+      <a [href]="link.href">{{ link.label }}</a>
+    }
+  </nav>
+
+  <a href="#cta" class="btn-primary">Solicitar demo</a>
+</header>

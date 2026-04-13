@@ -1,0 +1,33 @@
+<section class="hero-section">
+  <div class="hero">
+
+    <div class="hero-left">
+      <h1>La IA que <em>acompaña</em> a tus pacientes entre consulta y consulta</h1>
+
+      <p class="hero-sub">
+        Un asistente inteligente para clínicas de nutrición que responde dudas,
+        propone menús saludables y ofrece recomendaciones personalizadas según
+        el historial y la evolución de cada paciente.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#cta" class="btn-primary">Solicitar demo</a>
+        <a href="#como-funciona" class="btn-secondary">Ver cómo funciona</a>
+      </div>
+
+      <div class="badges">
+        @for (badge of badges; track badge) {
+          <div class="badge">
+            <div class="badge-dot"></div>
+            {{ badge }}
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <app-chat-mockup />
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-tag">Preguntas frecuentes</div>
+    <h2>Resolvemos tus<br><em>dudas</em></h2>
+    <p class="section-sub">Todo lo que necesitas saber antes de dar el paso.</p>
+
+    <div class="faq-grid">
+      @for (item of items; track item.question) {
+        <div class="faq-item">
+          <h4>{{ item.question }}</h4>
+          <p>{{ item.answer }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

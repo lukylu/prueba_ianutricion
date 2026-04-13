@@ -1,0 +1,60 @@
+.implementacion {
+  background: var(--dark);
+
+  h2 {
+    color: var(--mint);
+
+    em {
+      color: var(--lime);
+    }
+  }
+
+  .section-tag {
+    color: var(--sage-light);
+  }
+
+  .section-sub {
+    color: var(--sage-light);
+  }
+}
+
+.impl-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1px;
+  background: rgba(176, 190, 169, 0.2);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.impl-step {
+  background: #1e2819;
+  padding: 32px 28px;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #252f1e;
+  }
+}
+
+.impl-step-num {
+  font-family: 'Fraunces', serif;
+  font-size: 44px;
+  font-weight: 300;
+  color: rgba(231, 245, 158, 0.2);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--mint);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 13px;
+  color: var(--sage-light);
+  line-height: 1.6;
+}

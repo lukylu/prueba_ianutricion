@@ -1,0 +1,23 @@
+<section id="solucion">
+  <div class="section-inner">
+    <div class="section-tag">La solución</div>
+    <h2>Un asistente de IA diseñado para<br><em>clínicas de nutrición</em></h2>
+    <p class="section-sub">
+      Creamos un chat inteligente orientado a pacientes, entrenado con el enfoque de tu clínica,
+      capaz de resolver dudas alimenticias, generar menús adaptados y ofrecer seguimiento
+      personalizado a partir del historial de conversación y la actividad reciente del paciente.
+    </p>
+
+    <div class="solucion-bloques">
+      @for (bloque of bloques; track bloque.num) {
+        <div class="bloque">
+          <div class="bloque-num">{{ bloque.num }}</div>
+          <div class="bloque-text">
+            <h4>{{ bloque.title }}</h4>
+            <p>{{ bloque.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

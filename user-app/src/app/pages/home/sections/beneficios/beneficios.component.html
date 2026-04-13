@@ -1,0 +1,32 @@
+<section id="beneficios">
+  <div class="section-inner">
+    <div class="beneficios-grid">
+
+      <div class="beneficios-left">
+        <div class="section-tag">Beneficios</div>
+        <h2>Lo que gana<br>tu <em>clínica</em></h2>
+        <p class="description">
+          No es solo un chatbot. Es una extensión de tu equipo que trabaja
+          las 24 horas del día, sin perder el criterio clínico.
+        </p>
+      </div>
+
+      <div class="beneficios-list">
+        @for (item of beneficios; track item.title) {
+          <div class="beneficio">
+            <div class="beneficio-icon">
+              <svg viewBox="0 0 24 24">
+                <path [attr.d]="item.svgPath" />
+              </svg>
+            </div>
+            <div>
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        }
+      </div>
+
+    </div>
+  </div>
+</section>

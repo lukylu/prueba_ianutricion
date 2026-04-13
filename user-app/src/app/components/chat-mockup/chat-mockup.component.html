@@ -1,0 +1,36 @@
+<div class="phone-frame">
+  <div class="phone-notch"></div>
+  <div class="phone-screen">
+
+    <div class="chat-header">
+      <div class="chat-avatar">N</div>
+      <div>
+        <div class="chat-name">NutriMind</div>
+        <div class="chat-status">● En línea</div>
+      </div>
+    </div>
+
+    <div class="chat-messages">
+      @for (msg of messages; track msg.delay) {
+        <div
+          class="msg"
+          [class.msg-ai]="msg.type === 'ai'"
+          [class.msg-user]="msg.type === 'user'"
+          [style.animation-delay]="msg.delay + 's'"
+        >
+          {{ msg.text }}
+        </div>
+      }
+    </div>
+
+    <div class="chat-input-bar">
+      <input class="chat-input-field" type="text" placeholder="Escribe aquí..." disabled>
+      <button class="chat-send" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,44 @@
+section {
+  text-align: center;
+
+  .section-sub {
+    margin: 0 auto 50px;
+  }
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+
+  h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 900px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}

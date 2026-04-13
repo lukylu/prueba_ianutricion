@@ -1,0 +1,45 @@
+.como-funciona {
+  background: var(--mint);
+}
+
+.pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  counter-reset: paso;
+}
+
+.paso {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 28px;
+  position: relative;
+  counter-increment: paso;
+
+  &::before {
+    content: counter(paso, decimal-leading-zero);
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--mint);
+    line-height: 1;
+  }
+
+  h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 10px;
+    padding-right: 48px;
+  }
+
+  p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+}

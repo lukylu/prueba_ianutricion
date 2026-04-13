@@ -1,0 +1,34 @@
+<footer id="contacto">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo-text">Nutri<span>Mind</span></div>
+      <p class="footer-desc">Soluciones de IA personalizadas para negocios y profesionales.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Producto</h5>
+      @for (link of productLinks; track link.href) {
+        <a [href]="link.href">{{ link.label }}</a>
+      }
+    </div>
+
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      @for (link of contactLinks; track link.href) {
+        <a [href]="link.href">{{ link.label }}</a>
+      }
+    </div>
+
+    <div class="footer-col">
+      <h5>Legal</h5>
+      @for (link of legalLinks; track link.href) {
+        <a [href]="link.href">{{ link.label }}</a>
+      }
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© {{ currentYear }} NutriMind AI. Todos los derechos reservados.</span>
+    <span>Hecho con 🌿 para clínicas de nutrición</span>
+  </div>
+</footer>

@@ -1,0 +1,20 @@
+<section class="implementacion" id="implementacion">
+  <div class="section-inner">
+    <div class="section-tag">Implementación</div>
+    <h2>En marcha en<br><em>menos de dos semanas</em></h2>
+    <p class="section-sub">
+      Sin dependencia de tu equipo técnico. Nos encargamos de todo el proceso
+      de puesta en marcha y te acompañamos durante la adaptación.
+    </p>
+
+    <div class="impl-steps">
+      @for (step of steps; track step.num) {
+        <div class="impl-step">
+          <div class="impl-step-num">{{ step.num }}</div>
+          <h4>{{ step.title }}</h4>
+          <p>{{ step.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

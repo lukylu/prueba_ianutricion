@@ -1,0 +1,20 @@
+<section id="funcionalidades" class="funcionalidades-section">
+  <div class="section-inner">
+    <div class="section-tag">Funcionalidades</div>
+    <h2>Qué puede hacer<br>por tus <em>pacientes</em></h2>
+
+    <div class="features-grid">
+      @for (feature of features; track feature.title; let i = $index) {
+        <div class="feature-card card" [class.feature-card--dark]="i === 0">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path [attr.d]="feature.svgPath" />
+            </svg>
+          </div>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

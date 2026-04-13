@@ -1,0 +1,24 @@
+<section class="problema" id="problema">
+  <div class="section-inner">
+    <div class="section-tag">El problema</div>
+    <h2>Tus pacientes necesitan acompañamiento continuo,<br>pero tu tiempo es <em>limitado</em></h2>
+    <p class="section-sub">
+      Las dudas no aparecen solo en consulta. Aparecen en el supermercado,
+      al preparar comidas, al salir a comer fuera o al perder motivación durante la semana.
+    </p>
+
+    <div class="cards-row">
+      @for (card of cards; track card.title) {
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path [attr.d]="card.svgPath" />
+            </svg>
+          </div>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

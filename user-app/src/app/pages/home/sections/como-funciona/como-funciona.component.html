@@ -1,0 +1,19 @@
+<section class="como-funciona" id="como-funciona">
+  <div class="section-inner">
+    <div class="section-tag">Personalización</div>
+    <h2>Cómo funciona<br><em>para tu clínica</em></h2>
+    <p class="section-sub">
+      El asistente se entrena y adapta al enfoque de cada clínica,
+      respetando en todo momento el criterio del profesional.
+    </p>
+
+    <div class="pasos">
+      @for (paso of pasos; track paso.title) {
+        <div class="paso">
+          <h4>{{ paso.title }}</h4>
+          <p>{{ paso.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
