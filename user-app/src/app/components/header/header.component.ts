@@ -21,8 +21,8 @@ export class HeaderComponent {
    * Cada objeto define el texto visible y el ancla destino dentro de la página.
    */
   navLinks = [
-    { label: 'Cómo funciona', href: '#como-funciona' },
     { label: 'Qué puede hacer', href: '#funcionalidades' },
+    { label: 'Cómo funciona', href: '#como-funciona' },
     { label: 'Beneficios', href: '#beneficios' },
     { label: 'Implementación', href: '#implementacion' },
     { label: 'FAQ', href: '#faq' },
